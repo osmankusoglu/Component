@@ -1,0 +1,26 @@
+
+.advanced-filters-second-image {
+    position: absolute;
+    width: auto;
+    height: 261px;
+    top: 52%;
+    right: 16%;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: popOut 0.5s ease forwards;
+    animation-delay: 0.9s;
+    z-index: 2;
+  }
+  
+  .advanced-filters-third-image {
+    position: absolute;
+    width: auto;
+    height: 261px;
+    top: 52%;
+    right: 81%;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: popOut 0.5s ease forwards;
+    animation-delay: 0.7s;
+    z-index: 3;
+  }

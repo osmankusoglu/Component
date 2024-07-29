@@ -1,0 +1,138 @@
+.page {
+  width: 1440px;
+  height: 736px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.page-parag {
+  width: 556px;
+  height: 235px;
+  top: 212px;
+  left: 754px;
+  gap: 32px;
+  opacity: 0px;
+  text-align: right;
+  margin: 0 190 0 190;
+
+}
+
+
+#btnsDiv {
+  width: 1440px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.document-btn,
+.sign-stamp-btn,
+.batch-scanning-btn,
+.advanced-filters-btn,
+.export-share-btn {
+  width: 301px;
+  height: 124px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.document-btn::before,
+.sign-stamp-btn::before,
+.batch-scanning-btn::before,
+.advanced-filters-btn::before,
+.export-share-btn::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* padding: 4px; */
+}
+
+.icon {
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+#document:hover,
+#signStamp:hover,
+#batchScanning:hover,
+#advancedFilters:hover,
+#exportShare:hover {
+  border: #0381FF 5px solid;
+  transition: border 0.1s ease;
+}
+
+#document:focus,
+#signStamp:focus,
+#batchScanning:focus,
+#advancedFilters:focus,
+#exportShare:focus,
+#document:active,
+#signStamp:active,
+#batchScanning:active,
+#advancedFilters:active,
+#exportShare:active {
+  transition: border 1.0s ease-in-out;
+}
+
+.active {
+  background-color: #ddedfa;
+}
+
+.active .icon {
+  border: 2px solid #0381FF;
+  padding: 10px;
+}
+
+.document-image {
+  width: 610px;
+  height: 560px;
+  top: 51px;
+  right: 65px;
+  gap: 0px;
+  opacity: 0;
+  animation: slide-up 0.7s ease-out forwards;
+  position: relative;
+}
+
+.sign-stamp-image,
+.batch-scanning-image,
+.advanced-filters-image,
+.export-share-image {
+  width: 357.383px;
+  height: 481.8645px;
+  left: 68px;
+  top: 41px;
+  animation: slide-up 0.7s ease-out forwards;
+  position: relative;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

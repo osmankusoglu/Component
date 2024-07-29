@@ -1,0 +1,88 @@
+
+.batch-scanning-third-image {
+  position: absolute;
+  top: 100%; 
+  right: 10px;
+  width: 120px; 
+  height: auto;
+  opacity: 0;
+  animation: moveUpThird 0.9s ease forwards; 
+  animation-delay: 0.5s;
+}
+
+.batch-scanning-second-image {
+  position: absolute;
+  top: 400px; 
+  right: 70%;
+  width: 150px;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
+  animation: moveUpSecond 0.9s ease forwards; 
+  animation-delay: 0.65s; 
+}
+
+.batch-scanning-fourd-image {
+  position: absolute;
+  top: 80%; 
+  right: 19%;
+  width: 210px; 
+  height: auto;
+  opacity: 0;
+  z-index: 2;
+  animation: moveUpFourth 0.9s ease forwards; 
+  animation-delay: 0.7s;
+}
+
+@keyframes moveUpFourth {
+  0% {
+      top: 200%;
+      right: 4%;
+      opacity: 0;
+  }
+  100% {
+      top: 97%; 
+      right: 4%;
+      opacity: 1;
+  }
+}
+
+@keyframes moveUpSecond {
+0% {
+    top: 200%;
+    right: 34.5%;
+    opacity: 0;
+}
+100% {
+    top: 55.6%; 
+    right: 34.5%;
+    opacity: 1;
+}
+}
+
+@keyframes moveUpThird {
+0% {
+    top: 200%;
+    right: 38%;
+    opacity: 0;
+}
+100% {
+    top: 54.2%; 
+    right: 38%; 
+    opacity: 1;
+}
+}
+
+@media (max-width: 375px) {
+  .batch-scanning-fourd-image {
+      position: relative;
+      top: 114%;
+      right: 19%;
+      width: 210px;
+      height: auto;
+      opacity: 0;
+      z-index: 2;
+      animation: moveUpFourth 0.9s ease forwards;
+      animation-delay: 1s;
+  }
+}

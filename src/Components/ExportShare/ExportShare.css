@@ -1,0 +1,97 @@
+
+.export-share-second-image {
+    position: absolute;
+    top: 81%;
+    right: 93%;
+    width: 18px;
+    height: auto;
+    opacity: 0;
+    animation: moveUpAndLefts 0.5s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .export-share-third-image {
+    position: absolute;
+    top: 63%;
+    right: 84%;
+    width: 110px;
+    height: auto;
+    opacity: 0;
+    animation: moveUpAndLeft 0.5s ease forwards;
+    animation-delay: 0.75s;
+  }
+  
+  .export-share-fourd-image {
+    position: absolute;
+    width: 91px;
+    top: 69%;
+    right: 43%;
+    opacity: 0;
+    animation: moveUpMiddle 0.5s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  .export-share-fifth-image {
+    position: absolute;
+    width: 113px;
+    top: 63%;
+    right: 65%;
+    opacity: 0;
+    animation: moveUpRight 0.5s ease forwards;
+    animation-delay: 1.25s;
+  }
+  
+  @keyframes moveUpAndLefts {
+    from {
+      top: 100%;
+      right: 58%; 
+      opacity: 0;
+      transform: translateX(0);
+    }
+    to {
+      top: 83%;
+      right: 83%;
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes moveUpAndLeft {
+    from {
+      top: 100%;
+      right: 35%; 
+      opacity: 0;
+      transform: translateX(0);
+    }
+    to {
+      top: 70%;
+      right: 50%;
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes moveUpMiddle {
+    from {
+      top: 100%;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveUpRight {
+    from {
+      top: 100%;
+      right: 58%; 
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      top: 78.5%;
+      right: 16%; 
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }

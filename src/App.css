@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#home-page {
+  background: rgba(245, 245, 247, 1);
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#btnsDiv {
+  width: 1440px;
+  height: 120px;
+  gap: 0px;
+  opacity: 1;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  justify-content: space-around;
+  position: relative;
+  text-align: center;
+}
+
+.page-parag {
+  width: 556px;
+  height: 235px;
+  top: 212px;
+  left: 754px;
+  gap: 32px;
+  opacity: 0px;
+  text-align: right;
+  margin: 0 190 0 190;
+
+}
+
+.subtitle {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  letter-spacing: 2px;
+  text-align: right;
+  color: rgba(3, 129, 255, 1);
+
+}
+
+.header {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: right;
+  color: rgba(11, 18, 42, 1);
+
+}
+
+.paragraph {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: right;
+
+}
+
+.learn-more {
+  width: Hug (135px)px;
+  height: Hug (54px)px;
+  padding: 15px 20px 15px 20px;
+  gap: 10px;
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.87px;
+  text-align: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 1);
+
+}
+
+.sign-stamp-second-image,
+.sign-stamp-third-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.sign-stamp-second-image {
+  position: absolute;
+  top: 55%;
+  right: 83%;
+  width: 210px;
+  opacity: 0; 
+  transform: scale(0.5); 
+  animation: popOut .5s ease forwards; 
+  animation-delay: .5s; 
+  z-index: 2; 
+}
+
+.sign-stamp-third-image {
+  position: absolute;
+  top: 41%;
+  right: 57%;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popOut .5s ease forwards; 
+  animation-delay: .7s; 
+  z-index: 3;
+
+}
+
+@keyframes popOut {
+  from {
+    opacity: 0; 
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 0.9; 
+    transform: scale(1); 
+  }
+}
+
+.batch-scanning-third-image {
+  position: absolute;
+  top: 100%; 
+  right: 72%; 
+  width: 200px;
+  height: auto;
+  opacity: 0;
+  animation: moveUpThird 0.9s ease forwards; 
+  animation-delay: .5s; 
+}
+
+.batch-scanning-second-image {
+  position: absolute;
+  top: 100%; 
+  right: 70%; 
+  width: 250px;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
+  animation: moveUpSecond 0.9s ease forwards; 
+  animation-delay: 0.75s; 
+}
+
+.batch-scanning-fourd-image {
+  position: absolute;
+  top: 100%; 
+  right: 68%; 
+  width: 310px;
+  height: auto;
+  z-index: 2;
+  opacity: 0;
+  animation: moveUpFourth 0.9s ease forwards; 
+  animation-delay: 1s; 
+}
+
+@keyframes moveUpThird {
+  from {
+    top: 100%; 
+    opacity: 0; 
+  }
+  to {
+    top: 37%; 
+    opacity: 1; 
+  }
+}
+
+@keyframes moveUpSecond {
+  from {
+    top: 100%; 
+    opacity: 0; 
+  }
+  to {
+    top: 39%; 
+    opacity: 1; 
+  }
+}
+
+@keyframes moveUpFourth {
+  from {
+    top: 100%; 
+    opacity: 0; 
+  }
+  to {
+    top: 40.1%; 
+  }
+}
+
+.advanced-filters-second-image {
+  position: absolute;
+  top: 38%;
+  right: 63%;
+  opacity: 0; 
+  transform: scale(0.5); 
+  animation: popOut .5s ease forwards; 
+  animation-delay: .9s; 
+  z-index: 2; 
+}
+
+.advanced-filters-third-image {
+  position: absolute;
+  top: 38%;
+  right: 90%;
+  opacity: 0;
+  transform: scale(0.5); 
+  animation: popOut .5s ease forwards; 
+  animation-delay: .7s; 
+  z-index: 3;
+
+}
+
+@keyframes popOut {
+  from {
+    opacity: 0; 
+    transform: scale(0.5); 
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(1); 
+  }
+}
+
+.export-share-second-image {
+  position: absolute;
+  top: 81%;
+  right: 93%;
+  height: auto;
+  opacity: 0;
+  animation: moveUpAndLefts 0.5s ease forwards; 
+  animation-delay: 0.5s; 
+}
+
+.export-share-third-image {
+  position: absolute;
+  top: 63%;
+  right: 84%;
+  width: 160px;
+  height: auto;
+  opacity: 0;
+  animation: moveUpAndLeft 0.5s ease forwards;
+  animation-delay: 0.75s; 
+}
+
+.export-share-fourd-image {
+  position: absolute;
+  top: 61.5%;
+  right: 76%;
+  opacity: 0;
+  animation: moveUpMiddle .5s ease forwards; 
+  animation-delay: 1s; 
+}
+
+.export-share-fifth-image {
+  position: absolute;
+  top: 63%;
+  right: 65%;
+  opacity: 0;
+  animation: moveUpRight .5s ease forwards; 
+  animation-delay: 1.25s; 
+}
+
+
+@keyframes moveUpAndLefts {
+  from {
+    top: 100%; 
+    right: 78%; 
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    top: 82%;
+    right: 92%;
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveUpAndLeft {
+  from {
+    top: 100%; 
+    right: 75%;
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    top: 63%;
+    right: 78%; 
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveUpMiddle {
+  from {
+    top: 100%; 
+    opacity: 0; 
+  }
+  to {
+    
+    opacity: 1; 
+  }
+}
+
+@keyframes moveUpRight {
+  from {
+    top: 100%; 
+    right: 78%;
+    opacity: 0;
+    transform: translateY(0); 
+  }
+  to {
+    top: 75%;
+    right: 65%; 
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,55 @@
+.page {
+  position: relative;
+  text-align: center;
+}
+
+.sign-stamp-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.sign-stamp-second-image {
+  position: absolute;
+  top: 20%; 
+  left: 10%; 
+  width: 150px; 
+  z-index: 1;
+}
+
+.sign-stamp-third-image {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(
+    -50%,
+    -50%
+  ); 
+  width: 200px; 
+  z-index: 1;  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sign-stamp-second-image {
+  animation: fadeIn 1s ease-out; 
+}
+
+.sign-stamp-third-image {
+  animation: slideIn 1s ease-out;
+}
